@@ -54,13 +54,13 @@ function Form() {
         <div className='form-container'>
           <form id="forms" action="">
             <label htmlFor='name' className='label-wrapper'><span className='input-text'>Name</span></label>
-            <input type="text" name="name" value={state.Name} onChange={ChangeHandler} placeholder='Enter your name'></input>
+            <input type="text" name="name" value={state.Name} onChange={ChangeHandler} autoComplete="off" placeholder='Enter your name'></input>
             <br />
             <label htmlFor='department' className='label-wrapper'><span className='input-text'>Department</span></label>
-            <input type="text" name="department" value={state.Department} onChange={ChangeHandler} placeholder='Enter your department'></input>
+            <input type="text" name="department" value={state.Department} onChange={ChangeHandler} autoComplete="off" placeholder='Enter your department'></input>
             <br />
             <label htmlFor='rating' className='label-wrapper'><span className='input-text'>Rating</span></label>
-            <input type="text" name="rating" value={state.Rating} onChange={ChangeHandler} placeholder='Give Your Rating..'></input>
+            <input type="text" name="rating" value={state.Rating} onChange={ChangeHandler} autoComplete="off" placeholder='Give Your Rating..'></input>
             <br />
             <button type="submit" onClick={onSubmit}>Submit</button>
         </form>

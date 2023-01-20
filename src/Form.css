@@ -29,12 +29,12 @@
     border-radius: 50%;
     position: absolute;
     top:17%;
-    left: 41%;
+    left: 40%;
     background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
   }
   .shape2{
     top:52%;
-    left: 53%;
+    left: 52%;
     background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
   }
   form{
@@ -45,7 +45,7 @@
     position: absolute;
     transform: translate(-50%,-50%);
     top:45%;
-    left: 52%;
+    left: 50%;
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255,255,255,0.2);
     box-shadow: 0 0 40px rgba(8,7,16,0.6);
