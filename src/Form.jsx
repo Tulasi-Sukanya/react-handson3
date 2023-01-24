@@ -34,14 +34,16 @@ function Form() {
       if(showComp){
         return(
           <div className='data-container'>
-            <h1>Employee Feedback Data</h1>
-          {state.employees.map((value,index,array)=>{
-            return(
-              <span key={index}>{value.Name}&nbsp;&nbsp;{value.Department}&nbsp;&nbsp;{value.Rating}&nbsp;&nbsp;</span>
-            )
-          }
-          )}
-          <button onClick={ClickHandler} className="back">Go Back</button>
+             <h1>Employee Feedback Data</h1>
+             <div className='data'>
+             {state.employees.map((value,index,array)=>{
+              return(
+              <div key={index}>{value.Name}&nbsp;&nbsp;{value.Department}&nbsp;&nbsp;{value.Rating}&nbsp;&nbsp;</div>
+              )
+            }
+            )}
+             </div>
+             <button onClick={ClickHandler} className="back">Go Back</button>
         </div>
         )
       }
@@ -54,13 +56,13 @@ function Form() {
         <div className='form-container'>
           <form id="forms" action="">
             <label htmlFor='name' className='label-wrapper'><span className='input-text'>Name</span></label>
-            <input type="text" name="name" value={state.Name} onChange={ChangeHandler} autoComplete="off" placeholder='Enter your name'></input>
+            <input type="text" name="Name"  onChange={ChangeHandler} autoComplete="off" placeholder='Enter your name'></input>
             <br />
             <label htmlFor='department' className='label-wrapper'><span className='input-text'>Department</span></label>
-            <input type="text" name="department" value={state.Department} onChange={ChangeHandler} autoComplete="off" placeholder='Enter your department'></input>
+            <input type="text" name="Department" onChange={ChangeHandler} autoComplete="off" placeholder='Enter your department'></input>
             <br />
             <label htmlFor='rating' className='label-wrapper'><span className='input-text'>Rating</span></label>
-            <input type="text" name="rating" value={state.Rating} onChange={ChangeHandler} autoComplete="off" placeholder='Give Your Rating..'></input>
+            <input type="text" name="Rating"  onChange={ChangeHandler} autoComplete="off" placeholder='Give Your Rating..'></input>
             <br />
             <button type="submit" onClick={onSubmit}>Submit</button>
         </form>

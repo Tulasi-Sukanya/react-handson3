@@ -97,9 +97,9 @@
     flex-wrap: wrap;
     position: absolute;
     top: 5%;
-    left: 29%;
-    height:150px;
-    max-width:95%;
+    left: 34%;
+    height:90%;
+    max-width: 500px;
     background-color:gray;
     padding: 5px;
     background: rgba(255,255,255,0.13);
@@ -107,18 +107,29 @@
     border: 1px solid rgba(255,255,255,0.2);
     box-shadow: 0 0 40px rgba(8,7,16,0.6);
     border-radius: 10px;
+    resize: both;
   }
   .data-container h1{
-    margin-left: 10%;
+    margin-left: 13%;
     text-align: center;
   }
-  .data span{
-    padding: 5px;
-    margin: 5px;
-    background-color: darkolivegreen;
+  .data{
+    padding: 3%;
+    height:438px;
+    width: 600px;
+  }
+  .data div{
+    /* padding: 1%; */
+    text-align: center;
+    margin-left:25%;
+    margin-top: 5px;
+    height: 35px;
+    width: 205px;
+    background-color: lightgreen;
     border: 2px solid rgba(255,255,255,0.2);
     border-radius: 10px;
     line-break: normal;
+    color:black;
   }
   .back{
     border: none;
